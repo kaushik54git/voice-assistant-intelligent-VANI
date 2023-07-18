@@ -108,7 +108,7 @@ void removeSpecialChars(char *sentence) {
 
 void tts(const char* text){
 	char command[5000];
-    snprintf(command, sizeof(command), "curl --location --request POST \"https://centralindia.tts.speech.microsoft.com/cognitiveservices/v1\" --header \"Ocp-Apim-Subscription-Key: e650cf7f3f8e4b4f9721a05039ca6091\" --header \"Content-Type: application/ssml+xml\" --header \"X-Microsoft-OutputFormat: audio-16khz-128kbitrate-mono-mp3\" --header \"User-Agent: curl\" --data-raw \"<speak version='1.0' xml:lang='en-US'><voice xml:lang='en-US' xml:gender='female' name='en-IN-NeerjaNeural'>%s </voice></speak>\" --output output123.mp3", text);
+    snprintf(command, sizeof(command), "curl --location --request POST \"https://centralindia.tts.speech.microsoft.com/cognitiveservices/v1\" --header \"Ocp-Apim-Subscription-Key: YOUR KEY\" --header \"Content-Type: application/ssml+xml\" --header \"X-Microsoft-OutputFormat: audio-16khz-128kbitrate-mono-mp3\" --header \"User-Agent: curl\" --data-raw \"<speak version='1.0' xml:lang='en-US'><voice xml:lang='en-US' xml:gender='female' name='en-IN-NeerjaNeural'>%s </voice></speak>\" --output output123.mp3", text);
 
     system(command);
 
@@ -301,15 +301,15 @@ void whatsapp(){
     // Close the file
     fclose(file);
 
-	char number[20]="+916383646159";
+	char number[20]="DEFAULT NUMBER";
 	/*if(strcmp("Avinash",lastWord)==0 || strcmp("avinash",lastWord)==0 ){
-		strcpy(number, "+916383646159");
+		strcpy(number, "ADD NUMBER1");
 	}
 	else if (strcmp("khadar",lastWord)==0 || strcmp("Khadar",lastWord)==0){
-		strcpy(number, "+918688854584");
+		strcpy(number, "ADD NUMBER 2");
 	}
 	else if (strcmp("theva",lastWord)==0 || strcmp("Theva",lastWord)==0){
-		strcpy(number, "+917397682607");
+		strcpy(number, "ADD NUMBER 3");
 	}*/
 	printf("%s \n",number);
 	const char talk[] = "sending message to avinash ";
