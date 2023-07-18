@@ -1,6 +1,6 @@
 # Voice Assistant Project
 
-This project is a voice assistant built using the Azure Speech to Text (STT) and Azure Text to Speech (TTS) services. It is implemented in the C programming language. The voice assistant can convert spoken language into written text using STT and provide synthesized speech output using TTS.
+This project is a voice assistant built using the Azure Speech to Text (STT) and Azure Text to Speech (TTS) services. It is implemented in the C programming language. The voice assistant can convert spoken language into written text using STT and provide synthesized speech output using TTS. it is for window user (for linux or other OS, you have to chage the code to open different applications)
 
 ## Prerequisites
 
@@ -56,6 +56,8 @@ If you encounter any issues while setting up or running the voice assistant proj
 2. Check network connectivity: Ensure that your computer has a working internet connection to communicate with the Azure Speech services.
 
 3. Debugging: Utilize the debugging capabilities of your C development environment to identify and resolve any runtime errors or exceptions.
+
+4. if it is not recording then see for permission in setting
 
 ## License
 
